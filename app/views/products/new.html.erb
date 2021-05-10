@@ -1,0 +1,8 @@
+<%= link_to "All Products", products_path %>
+<h1>New Product</h1>
+<%= simple_form_for @product do |f|%>
+  <%= f.input :name, label: "Product Name", error: "Product Name is Mandatory", placeholder: "product name"%>
+  <%= f.input :tagline, label: "Tagline", placeholder: "product description"%>
+  <%= f.input :category, label: "Category Name", placeholder: "product category"%>
+  <%= f.button :submit, label: "Créer"%>
+<% end %>
