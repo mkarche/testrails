@@ -1,6 +1,8 @@
+<p><%= link_to "Return Home", root_path %></p>
 <h1>Mes Produits </h1>
 <% @products.each do |product| %>
   <p>
-    <%=product.name %>
+    <%=link_to product.name, product_path(product) %> (<%=product.category%>)
   </p>
 <%end%>
+

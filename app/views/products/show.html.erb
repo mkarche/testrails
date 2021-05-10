@@ -1,11 +1,15 @@
+<%= link_to "Return Home", root_path %>
 <h1>Details du produit</h1>
 <p>
-  <%=@product.name%>
+  Name: <%=@product.name%>
 </p>
 <p>
-  <%=@product.tagline%>
+  TagLine: <%=@product.tagline%>
 </p>
 <p>
-  <%=@product.category%>
+  Category: <%=@product.category%>
 <!--   <br><%=@product.name%> -->
 </p>
+
+<%= link_to "View all Products", products_path %>
+
