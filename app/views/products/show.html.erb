@@ -10,6 +10,6 @@
   Category: <%=@product.category%>
 <!--   <br><%=@product.name%> -->
 </p>
-
+<%= link_to "Update Product", edit_product_path(@product) %>
 <%= link_to "View all Products", products_path %>
 
